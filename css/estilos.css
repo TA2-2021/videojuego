@@ -1,0 +1,74 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(img/fondo2.jpg);
+    align-items: center;
+}
+
+.form{
+    position: relative;
+    margin-top: -65%;
+    margin-left: 35%;
+    width: 350px;
+    height: 300px;
+    align-items: center;
+}
+
+.perga{
+    height: 800px;
+    width: 800px;
+    float: right;
+    margin-right: 10%;
+    margin-top: 6%;
+}
+
+.perga>img{
+    height: 700px;
+    width: 900px;
+}
+
+.form > input{
+    border: 2px solid #44874B; 
+    box-sizing: border-box;
+    border-radius: 30px;
+    height: 35px;
+    outline: none;
+    padding: 5% 5% 5% 5%;
+}
+
+.form > h1{
+    font-size: 3rem;
+}
+
+.nav-pills {
+    margin-top: 15%;
+    height: 100%;
+}
+
+.nav-pills .nav-link{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+    width: 290px;
+}
+
+.tab-content{
+    background-color: #007bff;
+    width: 70%;
+    height: 95vh;
+    margin-left: 280px; 
+    margin-top: -31.2%;
+    box-shadow: 10px 10px 20px 1px;
+    border-radius: 10%;
+}
+
+ 
+
+
+
+
