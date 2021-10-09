@@ -3,71 +3,136 @@ body{
     padding: 0;
     background-image: url(img/fondo2.jpg);
     align-items: center;
+    font-family: 'Oleo Script', cursive;
 }
 
 .form{
     position: relative;
     margin-top: -65%;
-    margin-left: 35%;
-    width: 350px;
-    height: 300px;
+    margin-left: 23%;
+    width: 450px;
+    height: 500px;
     align-items: center;
 }
 
+#reg{
+    position: relative;
+    margin-top: -70%;
+    margin-left: 21%;
+    width: 450px;
+    height: 350px;
+    align-items: center;
+}
+
+#reg >h1{
+    font-size: 3rem;
+    height: 25px;
+    margin-bottom: 10%;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 5px #000, 2px 2px 5px #000, -2px 2px 5px #000, 2px -2px 5px #000;
+    margin-top: -25%;
+}
+
+#reg input{
+    height: 40px;
+    width: 65%;
+    padding: 2% 2% 2% 2%;
+    background : inherit;
+    font-size: 2.0rem;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
 .perga{
-    height: 800px;
-    width: 800px;
+    width: 50%;
     float: right;
-    margin-right: 10%;
-    margin-top: 6%;
+    margin-top: 1%;
+    margin-left: 20%;
 }
 
-.perga>img{
-    height: 700px;
-    width: 900px;
+.perga img{
+    width: 70%;
+    margin-left: 10%;
 }
 
-.form > input{
-    border: 2px solid #44874B; 
-    box-sizing: border-box;
-    border-radius: 30px;
-    height: 35px;
-    outline: none;
-    padding: 5% 5% 5% 5%;
+.form input{
+    height: 40px;
+    width: 70%;
+    padding: 2% 2% 2% 2%;
+    background : inherit;
+    font-size: 2.5rem;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+.form a{
+    text-decoration: none;
+    font-size: 2.9rem;
+    padding: 5% 3% 5% 2%;
+    position: relative;
+    top: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 2px #000, 2px 2px 2px #000, -2px 2px 2px #000, 2px -2px 2px #000;
+    margin-top: 20%;
 }
 
 .form > h1{
-    font-size: 3rem;
+    font-size: 5rem;
+    height: 25px;
+    margin-bottom: 20%;
+    color: rgb(255, 255, 255);
+    text-shadow: -2px -2px 5px #000, 2px 2px 5px #000, -2px 2px 5px #000, 2px -2px 5px #000;
+    margin-top: -30%;
 }
 
-.nav-pills {
-    margin-top: 15%;
-    height: 100%;
+.conteiner{
+    width: 25%;
+    height: 40%;
+    margin-top: 7%;
+    font-family: 'Oleo Script', cursive;
 }
 
-.nav-pills .nav-link{
-    font-family: sans-serif;
-    margin-bottom: 20px;
+.lol  {
+    height: 40%;
+    width: 40%;
+    position: relative;
+    margin-top: -100%;
+}
+
+.nav-link {
+    position: relative;
+    width: 80%;
+    text-align: center;
+    margin-left: 5%;
     font-size: 2rem;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #fff;
-    background-color: #007bff;
-    width: 290px;
+.conteiner img {
+    height: 100%;
+    width: 80%;
 }
 
 .tab-content{
-    background-color: #007bff;
-    width: 70%;
-    height: 95vh;
-    margin-left: 280px; 
-    margin-top: -31.2%;
-    box-shadow: 10px 10px 20px 1px;
+    width: 60%;
+    height: 80vh;
+    margin-left: 19.5%; 
+    margin-top: -23%;
     border-radius: 10%;
 }
 
- 
+.list-group{
+    float: right;
+    width: 20%;
+    height: 80%;
+    position: relative;
+    margin-top: -35%;
+}
+
+
 
 
 

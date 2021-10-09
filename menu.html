@@ -1,41 +1,97 @@
 <!DOCTYPE html>
 <html>
 <head>
-	 <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<title>Menu</title>
 </head>
 <body>
 
-	<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="width: 300px;">
-  		<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Historial</a>
-  		<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Tienda</a>
-  		<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Emparejamiento</a>
-  		<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Cerrar Sesion</a>
+	<!--lista de opciones izq-->
+
+	<div class="conteiner">
+
+		<img src="css/img/fondom.png">
+
+		<div class="nav lol flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="width: 300px;">
+			<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Historial</a>
+			<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Tienda</a>
+			<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Emparejamiento</a>
+			<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Cerrar Sesion</a>
+		
+			</div>
 	</div>
+
+	
+
+	<!--Contenido principal-->
 
 	<div class="tab-content" id="v-pills-tabContent" style="align-items: center;">
 
-		  <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-		  	<div class="cont">
-		  	</div>
-		  </div>
+		<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+		<div class="cont">
+					<table class="table table-dark table-hover">
+						<thead>
+						<tr>
+							<th scope="col">#</th>
+							<th scope="col">Ganador</th>
+							<th scope="col">Perdedor</th>
+							<th scope="col">Handle</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th scope="row">1</th>
+							<td>Mark</td>
+							<td>Otto</td>
+							<td>@mdo</td>
+						</tr>
+						<tr>
+							<th scope="row">2</th>
+							<td>Jacob</td>
+							<td>Thornton</td>
+							<td>@fat</td>
+						</tr>
+						<tr>
+							<th scope="row">3</th>
+							<td colspan="2">Larry the Bird</td>
+							<td>@twitter</td>
+						</tr>
+						</tbody>
+					</table>
 
-		  <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-		  ...
-		  </div>
+		</div>
+		</div>
 
-		  <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-		  ...
-		  </div>
+		<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+		...
+		</div>
+
+		<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+		...
+		</div>
 
 
-		  <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-		  ...
-		  </div>
+		<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+		...
+		</div>
+	</div>
+
+	<!--lista de opciones derecho, muestra jugadores conectados-->
+
+	<div class="list-group">
+		<a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+			Jugadores Conectados
+		</a>
+		<a href="#" class="list-group-item list-group-item-action">A second link item</a>
+		<a href="#" class="list-group-item list-group-item-action">A third link item</a>
+		<a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+		<a class="list-group-item list-group-item-action disabled">A disabled link item</a>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
