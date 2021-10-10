@@ -201,7 +201,7 @@ body{
 }
 
 .overlay{
-    background: rgb(0, 0,0 , .5);
+    background: #00000080;
     position: fixed;
     top:0;
     bottom: 0;
@@ -213,10 +213,6 @@ body{
     visibility: hidden;
 }
 
-.overlay.active{
-    visibility: visible;
-}
-
 .popup{
     background: cornsilk;
     box-shadow: 0px 0px 5px 0px rgb(0, 0, 0,.3);
@@ -224,10 +220,10 @@ body{
     font-family: 'Oleo Script', cursive;
     padding: 20px;
     text-align: center;
-    width: 600px;
+    width: 600px;   
 }
 
-.popup .btn-aceptar{
+.popup .btn-lol{
     padding: 0 20px;
     height: 40px;
     line-height: 40px;
@@ -243,7 +239,7 @@ body{
     cursor: pointer;
 }
 
-.popup .btn-aceptar:hover{
+.popup .btn-lol:hover{
     background: chocolate;
 }
 
