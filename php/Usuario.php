@@ -14,5 +14,6 @@
             $this-> oro = 0;
         }//*Fin Constructor
         
+        
     }
 ?>

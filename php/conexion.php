@@ -75,5 +75,4 @@
             $sql = 'SELECT nombre, estado FROM usuario;';
         }
     }//Clase
-
 ?>
