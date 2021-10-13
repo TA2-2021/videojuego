@@ -15,11 +15,13 @@
         <div class="perga">
             <img src="css/img/fondop.png">
 
-                <form method="post" action="" class="form" id="">
+                <form style="margin-top: -72%;" method="post" action="" class="form" id="">
                     <h1>Registrarse</h1>
-                    <input type="text" name="user" placeholder="Nombre">
-                    <input type="text" name="mail" placeholder="Mail">
-                    <input type="text" name="pass" placeholder="Contraseña">
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <input type="text" id="apellido" placeholder="Apellido">
+                    <input type="text" id="usuario" placeholder="Usuario">
+                    <input type="text" id="mail" placeholder="Mail">
+                    <input type="text" id="pass" placeholder="Contraseña">
                     <a href="menu.php">Confirmar</a>
                     <a href="index.php">Volver</a>
 

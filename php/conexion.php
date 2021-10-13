@@ -4,6 +4,8 @@
     DEFINE ('DB_USUARIO', 'root');
     DEFINE ('DB_CLAVE', 'root');
     DEFINE ('DB_NOMBRE', 'untitle');
+
+    
     
     class Conexion{
         protected $conexion;
