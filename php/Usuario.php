@@ -13,7 +13,5 @@
             $this-> estado = True;
             $this-> oro = 0;
         }//*Fin Constructor
-        
-        
     }
 ?>

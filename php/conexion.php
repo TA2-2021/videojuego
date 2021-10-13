@@ -54,8 +54,6 @@
                     echo 'Se ha ingresado correctamente';
                 }else
                 echo 'Error al ingresar';
-                
-                return;
             }
                 $this-> close();
         }//Funcion registrar
@@ -73,6 +71,11 @@
 
         public function mostrarUsuarios(){
             $sql = 'SELECT nombre, estado FROM usuario;';
-        }
+
+            if (mysqli_query($this-> conexion, $sql)){
+                echo 'Mostrar los usuarios en la lista lateral derecha conectados';
+            }else
+                echo 'Mostrar los usuarios en la lista lateral derecha desconectados';
+        }//Funcion mostrarUsuarios
     }//Clase
 ?>
