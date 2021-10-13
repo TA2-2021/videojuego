@@ -31,9 +31,9 @@
 			<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Tienda</a>
 			<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Emparejamiento</a>
 			<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-personajes" aria-selected="false">Personajes</a>
+
 			<a class="nav-link" href="index.php" >Cerrar Sesion</a>
-		
-			</div>
+		</div>
 	</div>
 
 	
