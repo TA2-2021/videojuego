@@ -20,8 +20,8 @@
                     <input type="text" name="user" placeholder="Nombre">
                     <input type="text" name="mail" placeholder="Mail">
                     <input type="text" name="pass" placeholder="Contraseña">
-                    <a href="menu.html">Confirmar</a>
-                    <a href="index.html">Volver</a>
+                    <a href="menu.php">Confirmar</a>
+                    <a href="index.php">Volver</a>
 
                 </form>
         </div>

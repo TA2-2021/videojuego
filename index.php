@@ -22,8 +22,8 @@
                 <h1>Iniciar Sesion</h1>
                 <input type="text" name="user" placeholder="Usuario" > 
                 <input type="text" name="pass" placeholder="Contraseña">
-                <a href="menu.html">Confirmar</a>
-                <a href="registrarse.html">Registrarse</a>
+                <a href="menu.php">Confirmar</a>
+                <a href="registrarse.php">Registrarse</a>
 
             </form>
 
