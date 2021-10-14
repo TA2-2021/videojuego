@@ -5,7 +5,13 @@
     DEFINE ('DB_CLAVE', 'root');
     DEFINE ('DB_NOMBRE', 'untitle');
 
-    
+    $nombreP=$_POST['nombre'];
+    $apellido=$_POST['apellido'];
+    $nombre=$_POST['usuario'];
+    $mail=$_POST['mail'];
+    $pass=$_POST['pass'];
+    $estado = false;
+    $oro = 0;
     
     class Conexion{
         protected $conexion;
@@ -31,6 +37,28 @@
 
         }//Funcion CLOSE
 
+        //Funcion insertar con dos funciones para diferente tabla
+       // public function insertar(){
+            //insertar_persona();
+            //registrar();
+        //}
+
+        //insertar persona
+        public function insertar_persona($nombre){
+            $sql = 'INSERT INTO persona VALUES("'. $nombreP.'","'. $apellido.'","'. $correo.'")';
+            
+            if ($this-> verificar_nombre($nombre)){
+                if (mysqli_query($this-> conexion, $sql)){
+                    echo 'Se ha ingresado correctamente';
+                }else
+                echo 'Error al ingresar';
+                
+                return;
+            }
+                $this-> close();
+
+        }///termina 
+
         public function verificar_nombre($nombre){
             $sql = 'SELECT * FROM usuario WHERE nombre = "' .$nombre. '";';
 
@@ -47,19 +75,20 @@
 
         //!Insert que se ejucara cuando se Crea el Obj usuario por primera vez
         public function registrar($nombre, $clave, $estado, $oro){
-            $sql = 'INSERT INTO usuario VALUES("'. $nombre.'","'. $clave.'","'. $estado.'","'. $oro.'")';
+            $this-> open();
+            $sql = $mysqli_query($this-> conexion, 'INSERT INTO usuario VALUES(0,'.$nombre.','.$pass.','.$estado.','.$oro.')');
+            echo "sukini";
             
             if ($this-> verificar_nombre($nombre)){
                 if (mysqli_query($this-> conexion, $sql)){
                     echo 'Se ha ingresado correctamente';
                 }else
                 echo 'Error al ingresar';
-                
-                return;
             }
                 $this-> close();
         }//Funcion registrar
 
+      // registrar($nombre, $pass, $estado, $oro);
 
         //Ingresar/Logearse
         public function ingresar($nombre, $clave){
