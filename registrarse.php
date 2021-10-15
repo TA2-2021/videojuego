@@ -15,7 +15,7 @@
         <div class="perga">
             <img src="css/img/fondop.png">
 
-                <form style="margin-top: -72%;" method="post" action="php/conexion.php" class="form" id="">
+                <form style="margin-top: -72%;" method="post" action="php/conexionPeruanaPeroAnda.php" class="form" id="">
                     <h1>Registrarse</h1>
                     <input type="text" name="nombre" placeholder="Nombre">
                     <input type="text" name="apellido" placeholder="Apellido">
@@ -23,7 +23,7 @@
                     <input type="text" name="mail" placeholder="Mail">
                     <input type="text" name="pass" placeholder="Contraseña">
                     
-                    <input type="submit" name="" value="Aceptar" id="btnEnviar" onclick="registrar()">
+                    <input type="submit" name="" value="Aceptar" id="btnEnviar">
                     <a href="index.php">Volver</a>
 
                 </form>
