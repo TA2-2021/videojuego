@@ -4,6 +4,7 @@
 
         if ($base->connect_errno){
             echo "<script>alert('ERROR AL CONECTAR')</script>";
+            exit;
         }
 
         if (isset($_POST['usuario'])){
