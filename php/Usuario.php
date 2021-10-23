@@ -1,5 +1,4 @@
 <?php
-
     Class Usuario {
         protected $nombreUsuario;
         protected $clave;

@@ -14,6 +14,9 @@
     $oro = 0;
     class Login {
     
+        public function logear ($nombreUsuario, $clave){
+
+        }
 
         public function registrar_usuario ($nombreUsuario, $claveUsuario){
 
@@ -53,14 +56,15 @@
             $sql = 'SELECT nombre FROM usuario WHERE nombre = ?';
             //Preparar onjeto RESULTADO para emitir el resultado de la sentencia
             $resultado = $base-> prepare($sql);
-            //la funcion Execute retorna BOOLEANO, por ende, si existe sera false, y sino true y que registre el usuario
-            if($resultado-> execute(Array($nombreU))){
-                return false;
-            }else
+            //ejecutar sentencia
+            $resultado->execute(array($nombreU));
+
+            $registro = $resultado->rowCount();
+
+            if ($registro != 0){
                 return true;
+            }else
+            return false;
         }
-
-
-    
     }//Clase Login
 ?>
