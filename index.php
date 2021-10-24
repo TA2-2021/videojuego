@@ -16,19 +16,14 @@
 
         <div class="perga">
             <img src="css/img/fondop.png">
-
             <form method="post" action="" class="form">
-
                 <h1>Iniciar Sesion</h1>
                 <input type="text" name="user" placeholder="Usuario" > 
                 <input type="text" name="pass" placeholder="Contraseña">
-                <a href="menu.php">Confirmar</a>
+                <input type="submit" name="aceptar" value="Iniciar Sesion">
                 <a href="registrarse.php">Registrarse</a>
-
             </form>
-
         </div>
-        
     </section>
 
     

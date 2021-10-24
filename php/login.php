@@ -1,38 +1,29 @@
 <?php
+    require('conexion.php');
 
-    $base = new mysqli ('localhost', 'root', '', 'untitlev1');
+    if (isset($_POST['aceptar'])?$_POST['aceptar']:null){
+        $usuario = $_POST['user'];
+        $clave = $_POST['pass'];
 
-        if ($base->connect_errno){
-            echo "<script>alert('ERROR AL CONECTAR')</script>";
-            exit;
-        }
+        $sql = "SELECT nombre, clave FROM usuario WHERE nombre = '$usuario' AND clave = '$clave'";
+        $resultado = mysqli_query($conexion, $sql);
 
-        if (isset($_POST['usuario'])){
-            $user = $_POST['usuario'];
-            $clave = md5($_POST['clave']);
-
-            if ($u == "" || $_POST['clave'] == null){
-                echo "<script>alert('Error: Usuario y/o clave vacios!!');</script>";
-            }else{
-                $sql = "SELECT usuario, clave FROM usuario WHERE usuario = '$user' AND
-                clave = '$clave' ";
-
-                if (!$consulta = $base-> query($sql)){
-                    echo "<script>alert('Usuario no encontrado!!');</script>";
-                }else{
-                    $row = mysqli_num_rows($consulta);
-
-                    if ($row == 0){
-                        echo "<script>alert('Usuario y/o clave incorrectos!!');</script>";
-                    }else{
-                        Header("Location:menu.php");
-                    }
-                }
+        if (mysqli_num_rows($resultado)) {
+            while ($row = mysqli_fetch_array($resultado)) {
+                $user = $row['user'];
+                $pass = $row['pass'];
             }
+            session_start();
+            $_SESSION['nombre'] = $user;
+            $_SESSION['clave'] = $pass;
+
+            header("Location: ../menu.php");
+        }else{
+            echo "<script>alert('No hay registro');</script>";
         }
-        $base = null;
-        $sql = null;
-        $consulta = null;
-        $row = null;
+    }else{
+        echo "<script>alert('ERROR!! USUARIO Y/O CLAVE INCORRECTO');</script>";
+    }
+    
 
 ?>
